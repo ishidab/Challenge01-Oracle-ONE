@@ -1,0 +1,197 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+
+}
+
+html {
+    background-color: #c0d6fd;
+}
+
+body, .caja-texto, .texto-salida, button{
+    font-family: 'Nunito', sans-serif;
+    padding: 30px;
+}
+
+
+textarea {
+    font-size: 20px;
+}
+
+.logo{
+    display: inline-block;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+    width: 120px;
+    height: 100px;
+    left: 40px;
+    top: 40px;
+}
+
+.logo img {
+    margin: 10px 30px;
+}
+
+.logo img:hover{
+    transform: scale(1.1);
+}
+
+button {
+    background-color: #e99f7d;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 10px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8af5c3;
+    color: rgb(0, 0, 0);
+    transform: scale(1.02);
+}
+
+button:focus{
+    background-color: #83b5dd;
+    color: white;
+}
+
+.caja-principal {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    grid-auto-rows: minmax(200px, auto);
+    margin-right: 15px;
+    margin-left: 15px;
+
+}
+
+.caja-encriptar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.caja-desencriptar {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+    border-style: none;
+    border-radius: 20px;
+    box-shadow: 1px 2px 30px 5px rgb(17, 24, 58);
+}
+
+.caja-texto{
+    flex: 2 400px;
+    background-color: #ffffff;
+    resize: none;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 2px 30px 5px rgb(17, 24, 58);
+}
+
+.texto-salida {
+    flex: 2 300px;
+    width: 90vw;
+    resize: none;
+}
+
+.botones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.botones button {
+    flex: 1 auto;
+    margin: 5px;
+    font-size: 18px;
+    line-height: 1.5;
+    width: 50px;
+}
+
+.sin-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.con-texto {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.con-texto button {
+
+    flex: 1 auto;
+    font-size: 18px;
+    line-height: 1.5;
+    width: 250px;
+    margin-top: 20px;
+}
+
+#copiar{
+    margin-bottom: 1em;
+}
+
+#encriptar, #desencriptar, #copiar{
+    border: none;
+}
+
+footer {
+    background-color: rgb(3, 7, 29);
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px;
+    color: white;
+    margin-top: 20px;
+    opacity: 0.8;
+}
+
+footer a {
+    color: rgb(150, 245, 190);
+}
+
+
+/*PARA OTROS DISPOSITIVOS*/
+
+@media screen and (min-width: 1024px) {
+    .caja-principal {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 30px;
+        grid-auto-rows: minmax(80vh, auto);
+        margin-right: 15px;
+        margin-left: 15px;
+
+
+    }
+    .logo{
+        padding: 30px 30px 30px 0;
+    }
+
+    .texto-salida {
+
+        width: 30vw;
+        flex: 2 70vh;
+        resize: none;
+    }
+    footer{
+        width: 100%;
+        margin-top: 100px;
+    }
+}

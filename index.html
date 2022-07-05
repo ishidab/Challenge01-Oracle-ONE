@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Encriptador de texto</title>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <script src="index.js"></script> <!--hoja JS-->
+
+    <link rel="stylesheet" href="reset.css"> <!--hoja RESET CSS-->
+    <link rel="stylesheet" href="index.css"> <!--hoja estilos CSS-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <!--TIPOGRAFÍA-->
+
+</head>
+
+<body>
+    <header class="logo">
+        <img  src="imagenes/Vector.png" alt="Logo Alura">
+    </header>
+
+    <main>
+        <section>
+            <div class="caja-principal">
+                <div class="caja-encriptar">
+                    <textarea  class="caja-texto"  placeholder="Ingrese el texto aquí" ></textarea>
+      
+                    <div class="botones">
+                        <button id="encriptar">¡Encriptar!</button>
+                        <button id="desencriptar">¡Desencriptar!</button>
+                    </div>        
+                </div>
+        
+                <div class="caja-desencriptar">
+                    <div class="sin-texto">
+                        <img class="muñeco" src="imagenes/Muñeco.png" alt="Logo Muñeco">
+                        <h3>¡Todavía no hay nada! 🙁</h3><br>
+                        <p>Ingresa un texto a encriptar o desencriptar.</p>
+                    </div>
+                    <div class="con-texto">
+                        <textarea class="texto-salida"></textarea>
+                        <button id="copiar" class="copiar">Copiar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+
+    <!--PIE DE PÁGINA-->
+    <footer>
+        <p>&copy Brenda Ishida - 2022</p><br>
+        <a href="https://github.com/ishidab?tab=repositories" target="_blank" style="font-weight:bold">✦ GitHub - ishidab ✦</a>
+    </footer>
+
+</body>
+</html>
